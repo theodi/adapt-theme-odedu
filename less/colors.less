@@ -2,7 +2,7 @@
 // =============
 
 @white: #ffffff;
-@black: #4b4e4f;
+@black: #000000;
 @blue: #0075BD;
 @light-grey: #78909c;
 @mid-grey: #6d6d6d;
@@ -16,30 +16,37 @@
 @odi-color-one:#0075BD;
 @odi-color-two:#8b005c;
 @odi-color-three:#D47800;
-@odi-color-four:#d1d2d4;
-@odi-color-five:#007aba;
-@odi-color-six:#F86D18;
-@odi-color-seven:#bb007b;
-@odi-color-eight:#20609a;
-@odi-color-nine:#e6e7e9;
-@odi-color-ten:#000000;
+@odi-color-four:@odi-color-one;
+@odi-color-five:@odi-color-two;
+@odi-color-six:@odi-color-three;
+@odi-color-seven:@odi-color-one;
+@odi-color-eight:@odi-color-two;
+@odi-color-nine:@odi-color-three;
+@odi-color-ten:@odi-color-one;
+//@odi-color-four:#d1d2d4;
+//@odi-color-five:#007aba;
+//@odi-color-six:#F86D18;
+//@odi-color-seven:#bb007b;
+//@odi-color-eight:#20609a;
+//@odi-color-nine:#e6e7e9;
+//@odi-color-ten:#000000;
 
 @menu-header-background-color: white;
 @primary-color:@odi-color-one;
-@secondary-color:@odi-color-five;
-@tertiary-color:@odi-color-two;
+@secondary-color:@odi-color-two;
+@tertiary-color:@odi-color-three;
 
 // Main Colors
 // ===========
 
 // Components
-@primary-color: @odi-color-three;
+@primary-color: @odi-color-one;
 @primary-color-inverted: @white;
 // Buttons
-@secondary-color: @odi-color-one;
+@secondary-color: @odi-color-two;
 @secondary-color-inverted: @white;
 // Navigation Bar
-@tertiary-color: @black;
+@tertiary-color: @odi-color-three;
 @tertiary-color-inverted: @white;
 // Drawer
 @quaternary-color: @dark-grey;
@@ -70,7 +77,7 @@
 
 // Buttons
 @button-color: @odi-color-one;
-@menu-button-color: @odi-color-eight;
+@menu-button-color: @odi-color-one;
 @button-color-inverted: @primary-color-inverted;
 @button-color-hover: darken(@button-color, 40%);
 @button-color-disabled: @disabled-color;
@@ -84,7 +91,7 @@
 @button-border-color-disabled: @button-color-disabled;
 
 // Navigation 
-@navigation-color: @odi-color-nine;
+@navigation-color: @black;
 
 @navigation-icon-color: @tertiary-color-inverted;
 @navigation-icon-color-hover: darken(@navigation-icon-color, 40%);
