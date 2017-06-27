@@ -1,0 +1,24 @@
+{
+    "name": "adapt-theme-odedu",
+    "repository": "git@github.com:theodi/adapt-theme-odedu.git",
+    "framework": "^2.0.0",
+    "version": "0.4.1",
+    "homepage": "https://github.com/theodi/adapt-theme-odedu/",
+    "issues": "https://github.com/theodi/adapt-theme-odedu/issues",
+    "displayName": "ODEdu",
+    "theme": "ODEdu",
+    "description": "A custom theme for ODEdu modules",
+    "main": "js/odedu.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-theme"
+    ],
+    "licenodedu": "GPLv3",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}
