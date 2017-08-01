@@ -15,6 +15,15 @@ body {
 	font-size: 17px;
 	line-height: 27px;
 }
+.navigation-home-button {
+	display: none;
+}
+.navigation-back-button {
+	display: none;
+}
+.navigation-drawer-toggle-button {
+	display: none;
+}
 .icon-home {
 	padding-right: 0;
 	float: left;
@@ -62,6 +71,33 @@ h5 {
 	max-height: 70px;
 	display: inline-block;
 }
+.data-table { 
+	th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+		padding: 6px;
+	}
+}
+.rdf-table { 
+	th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+		padding: 6px;
+		width: 33%;
+	}
+}
+.joined-bottom {
+	.block-inner {
+		padding-top: 1px;
+		margin-top: 0px;
+	}
+}	
+.joined-top {
+	.block-inner {
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+	}
+}	
 .block {
 	.text-component {
 		&.ticks ul li {
@@ -805,6 +841,11 @@ h5 {
 		}
 	}
 	&.inverted {
+		.rdf-table, .data-table { 
+			th, td {
+				border: 1px solid white;
+			}
+		}
 		a, a:hover, a:visited {
 			color: @primary-color-inverted;
 		}
