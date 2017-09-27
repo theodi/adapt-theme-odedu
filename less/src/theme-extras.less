@@ -15,18 +15,12 @@ body {
 	font-size: 17px;
 	line-height: 27px;
 }
-.navigation-home-button {
-	display: none;
-}
-.navigation-back-button {
-	display: none;
-}
-.navigation-drawer-toggle-button {
-	display: none;
-}
 .icon-home {
 	padding-right: 0;
 	float: left;
+}
+.about-credit p {
+	display: inline;
 }
 .menu {
 	.menu-item {
@@ -38,6 +32,17 @@ body {
 		}
 	}
 }
+.graphic-attribution {
+    position: relative;
+    background-color: rgba(100,100,100,0.85);
+    display: inline-block;
+    bottom: 2.5em;
+    padding: 3px;
+    color: white;
+}
+.graphic-attribution a {
+    color: white;
+}
 h5 {
 	font-size: 21.25px;
 	line-height: 31.25px;
@@ -45,7 +50,7 @@ h5 {
 	margin-bottom: 25px;
 }
 .footer {
-	background-color: @black;
+	background-color: @navigation-color;
 	.graphic-attribution {
 		display: none;
 	}
@@ -57,47 +62,37 @@ h5 {
 	position: relative;
     text-align: right;
 }
-.about-links {
+.about-section {
 	font-size: 0.8em;
 	a {
 		text-decoration: underline;
 		cursor: pointer;
 	}
+	p {
+		margin: 0px;
+	}
+	@media all and (max-width: @device-width-medium) {
+		text-align: center;
+	}
+}
+.about-credit {
+	text-align: center;
+	margin-bottom: 10px;
 }
 .footer-logo {
 	text-align: left;
+	@media all and (max-width: @device-width-medium) {
+		text-align: center;
+		padding-bottom: 20px;
+	}
+	@media all and (max-width: @device-width-small) {
+		padding-bottom: 0px;
+	}
 }
 .footer-logo img {
 	max-height: 70px;
 	display: inline-block;
 }
-.data-table { 
-	th, td {
-		border: 1px solid black;
-		border-collapse: collapse;
-		padding: 6px;
-	}
-}
-.rdf-table { 
-	th, td {
-		border: 1px solid black;
-		border-collapse: collapse;
-		padding: 6px;
-		width: 33%;
-	}
-}
-.joined-bottom {
-	.block-inner {
-		padding-top: 1px;
-		margin-top: 0px;
-	}
-}	
-.joined-top {
-	.block-inner {
-		padding-bottom: 0px;
-		margin-bottom: 0px;
-	}
-}	
 .block {
 	.text-component {
 		&.ticks ul li {
@@ -841,11 +836,6 @@ h5 {
 		}
 	}
 	&.inverted {
-		.rdf-table, .data-table { 
-			th, td {
-				border: 1px solid white;
-			}
-		}
 		a, a:hover, a:visited {
 			color: @primary-color-inverted;
 		}

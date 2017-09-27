@@ -2,6 +2,7 @@
 // ==================
 
 .navigation {
+    position: relative;
     min-width: @default-width;
     *width: @default-width;
     overflow: hidden;
@@ -23,11 +24,6 @@
         }
     }
 
-    .clientLogo {
-        float: left;
-        height: (@navigation-padding * 2) + @icon-size;
-    }
-
     @media all and (max-width:(@device-width-large - 1px)) {
         width: 1px;
         min-width: 100%;
@@ -41,9 +37,6 @@
         height:@navigation-height-mobile;
         .icon {
             padding: 14px;
-        }
-        .clientLogo {
-            height: @navigation-height-mobile;
         }
     }
 
@@ -96,8 +89,8 @@
         padding: 3px;
         margin-right: 0em;
     }
-    border: 1px solid @button-color;
-    background-color: @button-color;
+    border: 1px solid #ed39aa;
+    background-color: #ed39aa;
     text-dectoration:none;
     color: white;
     margin-top: 8px;
@@ -106,58 +99,12 @@
     position: relative;
     margin: 0px;
 }
-.select-input {
-    padding: 5px;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: gray;
-    width: 62%;
-    @media all and (max-width:(@device-width-medium - 1px)) {
-        width: 84%;
-        display: block;
-        font-size: 1em;
-    }
-}
-.name-input {
-    padding: 5px;
-    font-size: 1.5em;
-    color: gray;
-    width: 250px;
-    margin: 10px;
-    @media all and (max-width:(@device-width-medium - 1px)) {
-        width: 80%;
-        margin: 0px;
-        margin-bottom: 10px;
-        display: block;
-        font-size: 1em;
-    }
-}
 .email-input {
     padding: 5px;
     font-size: 1.5em;
     color: gray;
-    width: 250px;
-    margin-bottom: 10px;
-    width: 60%;
+    width: 50%;
     @media all and (max-width:(@device-width-medium - 1px)) {
         width: 80%;
-        display: block;
-        font-size: 1em;
-    }
-}
-#countries, #region {
-    padding: 5px;
-    color: gray;
-    margin: 10px;
-}
-#countries_msdd, #region_msdd {
-    width: 62%;
-    @media all and (max-width:(@device-width-medium - 1px)) {
-        width: 84%;
-    }
-}
-.dd .ddTitle .ddTitleText {
-    @media all and (max-width:(@device-width-medium - 1px)) {
-        font-size: 1em;
     }
 }
