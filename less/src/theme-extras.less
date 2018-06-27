@@ -19,6 +19,9 @@ body {
 	padding-right: 0;
 	float: left;
 }
+.navigation-drawer-toggle-button {
+	display:none;
+}
 .about-credit p {
 	display: inline;
 }
@@ -92,6 +95,57 @@ h5 {
 .footer-logo img {
 	max-height: 70px;
 	display: inline-block;
+}
+.block {
+  &.inverted {
+	table {
+  	border-collapse: collapse;
+		td, th {
+		        border: 1px solid @primary-color-inverted;
+			padding-left: 7px;
+		}
+  		tr td:first-child, tr th:first-child {
+			border-left: 0;
+		}
+		tr td:last-child, tr th:last-child {
+			border-right: 0;
+		}
+		tr td {
+		 	border-top: 0;
+			border-bottom: 0;
+		}
+	}
+	table tr:first-child th {
+	   border-top: 0;
+	}
+	table tr:last-child td {
+	   border-bottom: 0;
+	}
+  }
+}
+table {
+  border-collapse: collapse;
+
+  td, th {
+  	border: 1px solid gray;
+	padding-left: 7px;
+  }
+  tr td:first-child, tr th:first-child {
+	border-left: 0;
+  }
+  tr td:last-child, tr th:last-child {
+	border-right: 0;
+  }
+  tr td {
+  	border-top: 0;
+	border-bottom: 0;
+  }
+}
+table tr:first-child th {
+   border-top: 0;
+}
+table tr:last-child td {
+   border-bottom: 0;
 }
 .block {
 	.text-component {
